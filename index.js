@@ -17,3 +17,4 @@ switch (age) {
   default:
     console.log("invalid value");
 }
+removed
