@@ -17,7 +17,7 @@
 //   default:
 //     console.log("invalid value");
 // }
-       //--fizzbuzz array
+//--fizzbuzz array
 // function FizzBuzz(num) {
 //   const arr =[]
 //   for (let i = 1; i <= num; i++) {
@@ -37,14 +37,33 @@
 
 //   ---intersection array
 
-function arrayIntersection(arr1, arr2) {
-  const result = [];
- for (let i = 0; i < arr1.length; i++) {
- if(arr2.includes(arr1[i]) && !result.includes(arr1[i])) {
-   result.push(arr1[i]);
-   }
-  }
-  return result;
-}
+// function arrayIntersection(arr1, arr2) {
+//   const result = [];
+//   for (let i = 0; i < arr1.length; i++) {
+//     if (arr2.includes(arr1[i]) && !result.includes(arr1[i])) {
+//       result.push(arr1[i]);
+//     }
+//   }
+//   return result;
+// }
 
-console.log(arrayIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]));
+// console.log(arrayIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]));
+
+//   ---Display likes
+function displayLikes(names) {
+  const length = names.length;
+
+  switch (length) {
+    case 0:
+      return "no one likes this";
+    case 1:
+      return `${names[0]} likes this`;
+    case 2:
+      return `${names[0]} and ${names[1]} like this`;
+    case 3:
+      return `${names[0]}, ${names[1]} and ${names[2]} like this`;
+    default:
+      return `${names[0]}, ${names[1]} and ${length - 2} others like this`;
+  }
+}
+console.log(displayLikes(["A","B","C","D"])); // A, B and 2 others like this
