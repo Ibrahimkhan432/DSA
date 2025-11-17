@@ -17,20 +17,34 @@
 //   default:
 //     console.log("invalid value");
 // }
+       //--fizzbuzz array
+// function FizzBuzz(num) {
+//   const arr =[]
+//   for (let i = 1; i <= num; i++) {
+//     if (i % 3 === 0 && i % 5 === 0) {
+//       arr.push("FizzBuzz");
+//     } else if (i % 3 === 0) {
+//       arr.push("Fizz");
+//     } else if (i % 5 === 0) {
+//       arr.push("Buzz");
+//     } else {
+//       arr.push(i);
+//     }
+//   }
+//   return arr;
+// }
+// console.log(FizzBuzz(15));  // [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", 13, 14, "FizzBuzz"]
 
-function FizzBuzz(num) {
-  const arr =[]
-  for (let i = 1; i <= num; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
-      arr.push("FizzBuzz");
-    } else if (i % 3 === 0) {
-      arr.push("Fizz");
-    } else if (i % 5 === 0) {
-      arr.push("Buzz");
-    } else {
-      arr.push(i);
-    }
+//   ---intersection array
+
+function arrayIntersection(arr1, arr2) {
+  const result = [];
+ for (let i = 0; i < arr1.length; i++) {
+ if(arr2.includes(arr1[i]) && !result.includes(arr1[i])) {
+   result.push(arr1[i]);
+   }
   }
-  return arr;
+  return result;
 }
-console.log(FizzBuzz(15));  // [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", 13, 14, "FizzBuzz"]
+
+console.log(arrayIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]));
