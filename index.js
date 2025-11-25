@@ -50,20 +50,31 @@
 // console.log(arrayIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]));
 
 //   ---Display likes
-function displayLikes(names) {
-  const length = names.length;
+// function displayLikes(names) {
+//   const length = names.length;
 
-  switch (length) {
-    case 0:
-      return "no one likes this";
-    case 1:
-      return `${names[0]} likes this`;
-    case 2:
-      return `${names[0]} and ${names[1]} like this`;
-    case 3:
-      return `${names[0]}, ${names[1]} and ${names[2]} like this`;
-    default:
-      return `${names[0]}, ${names[1]} and ${length - 2} others like this`;
-  }
-}
-console.log(displayLikes(["A","B","C","D"])); // A, B and 2 others like this
+//   switch (length) {
+//     case 0:
+//       return "no one likes this";
+//     case 1:
+//       return `${names[0]} likes this`;
+//     case 2:
+//       return `${names[0]} and ${names[1]} like this`;
+//     case 3:
+//       return `${names[0]}, ${names[1]} and ${names[2]} like this`;
+//     default:
+//       return `${names[0]}, ${names[1]} and ${length - 2} others like this`;
+//   }
+// }
+// console.log(displayLikes(["A","B","C","D"])); // A, B and 2 others like this
+
+
+//   -- pattern
+// let prompt = require("prompt-sync")();   // npm i prompt-sync
+// let n = Number(prompt("Enter number"));
+// for (let i = 1; i <= n; i++) {
+//   for (let j = 1; j <= n; j++) {
+//     process.stdout.write("* ");
+//   }
+//   console.log();
+// }
