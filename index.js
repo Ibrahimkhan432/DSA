@@ -244,6 +244,44 @@
 
 // console.log(a);
 // console.log(b);
-// var x = 0b10; 
-// var x = 0b100; 
+// var x = 0b10;
+// var x = 0b100;
 // console.log( x)
+
+//  -- reverse string
+// var str = "hello";
+
+// var reverse = str.split('').reverse().join('')
+
+// var reverse = "";
+// for (let i = str.length - 1; i >= 0; i--) {
+//   reverse += str[i];
+// }
+// console.log(reverse);
+
+// // var arr = ["a","b","c"]
+// // arr.length=1
+// // console.log(arr)
+
+// var btn = document.getElementById("btn")
+// btn.addEventListener("click",clickBtn =()=>{
+//   var input = document.getElementById("input").value
+//   console.log("value",input)
+
+// var list = document.getElementById("list")
+
+// var listItem = document.createElement('li')
+
+// listItem.textContent = input;
+// list.appendChild(listItem)
+// })
+
+// var arr = [1,2,3,4,5]
+// let arr2 = ""
+// arr.forEach(myfun)
+
+// function myfun(val){
+// return arr2 += val + "<br>"
+// }
+// console.log(arr2)
+
